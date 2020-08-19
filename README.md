@@ -2,8 +2,8 @@
 
 ## Contexte
 
-Le nombre d'occupants d'un bâtiment permet de calculer XX qui est important pour l'estimation
-de son impact environnemental. Il est calculé à partir de données d'entrées qui sont disponibles
+Le nombre d'occupants d'un bâtiment est une information importante pour l'estimation
+de son impact environnemental, il sert par exemple aux calculs de consommation d'eau potable. Il est estimé à partir de données d'entrées qui sont disponibles
 dans le résultat de l'étude thermique (appelé RSET) préalable à l'étude environnementale.
 
 L'objectif est de calculer et d'afficher le nombre d'occupants à partir des données d'entrées disponibles
@@ -31,6 +31,7 @@ La base de code utilise VueJS + Vuetify mais l'utilisation d'un autre framework 
 ### Installation
 
 - Cloner le dépôt
+- Installer la CLI Vue : `npm install -g @vue/cli`
 - Installer les dépendances : `npm install`
 - Lancer le serveur : `npm run serve`
 - Ouvrir l'application dans le navigateur : `http://localhost:8080/`
