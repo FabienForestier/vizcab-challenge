@@ -21,18 +21,24 @@
         </v-app-bar>
 
         <v-main>
-            <layout-occupation-zone />
+            <layout-occupation-zone v-for="building in buildings" :key="building.Index" :building="building"/>
         </v-main>
     </v-app>
 </template>
 
 <script>
 import LayoutOccupationZone from "./components/LayoutOccupationZone";
+import * as data from '@/data/rset.json';
 
 export default {
-    name: "App",
-    components: {
-        LayoutOccupationZone
-    }
+  name: "App",
+  components: {
+    LayoutOccupationZone,
+  },
+  data: function() {
+    return {
+      buildings: data.Batiments,
+    };
+  },
 };
 </script>
